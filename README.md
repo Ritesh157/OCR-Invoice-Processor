@@ -2,7 +2,7 @@
 
 This project is a Python-based pipeline for processing invoice images using Optical Character Recognition (OCR). It extracts key information (vendor, invoice number, date, total, currency), cleans and validates the data, stores it in a SQLite database, and logs the results. The workflow is orchestrated using LangGraph, a framework for building robust, stateful applications.
 
-- Features: 
+## Features: 
 
 OCR Extraction: Reads text from invoice images using an OCR library (e.g., easyocr).
 
@@ -16,7 +16,7 @@ Notification: Logs processing outcomes with validation status and key details.
 
 Fallback Extraction: Uses regex-based heuristic extraction when AI-based processing is unavailable.
 
-- Project Structure:
+## Project Structure:
 
 The pipeline consists of the following key components:
 
@@ -32,10 +32,10 @@ NODE_PERSIST: Stores the validated data in a SQLite database.
 
 NODE_NOTIFY: Prints a summary of the processing outcome, including validation status.
 
-- Requirements:
+## Requirements:
 
 Python 3.8+
 
-Libraries: pytesseract, langgraph, sqlite3, json, re, and other dependencies (see requirements.txt for details).
+Libraries: pytesseract, langgraph, sqlite3, json, re, and other dependencies.
 
-Tesseract OCR installed on your system.
+easyOCR installed on your system.
